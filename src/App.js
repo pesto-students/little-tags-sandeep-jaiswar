@@ -4,7 +4,7 @@ import { getProductsFromFirestore, dataFromSnapshot } from './services/firestore
 import { Route, Switch } from 'react-router';
 import Home from './pages/Home';
 import Registration from './pages/Registration';
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 function App() {
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <Fragment>
-      <Header />
+      <Navbar/>
       <Switch>
         <Route exact path="/" component={Home}></Route>
         <Route path="/home" component={Home}></Route>
