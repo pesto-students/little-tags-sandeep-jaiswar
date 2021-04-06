@@ -1,0 +1,38 @@
+.header{
+  background-color: var(--secondary-color);
+  display: flex;
+  box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 1;
+  align-items: center;
+}
+
+.header > * {
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamLine{
+  width: 1.5rem;
+  height: 5px;
+  background-color: black;
+  margin: 5% 0;
+}
+
+.container{
+  display: flex;
+}
+
+.container > *{
+  margin: 0 4px;
+}

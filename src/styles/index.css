@@ -1,0 +1,16 @@
+:root{
+  --primary-color: ivory;
+  --secondary-color: ivory;
+  --header-height: max(1%, 1.5rem);
+}
+
+body,html{
+  height: max(100vh,100%);
+}
+
+body{
+  background-color: var(--primary-color);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
