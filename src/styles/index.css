@@ -8,13 +8,18 @@ body,html{
   height: max(100vh,100%);
 }
 
-body{
-  background-color: var(--primary-color);
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: Gotham, serif;
 }
 
-.topSection{
-  /* display: flex; */
+body{
+  background-color: var(--primary-color);
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: local('Gotham'), url(../fonts/Gotham-Font/Gotham-Light.otf) format('truetype');
 }

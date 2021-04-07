@@ -1,6 +1,6 @@
 .sidebar{
   position: fixed;
-  width: 20vw;
+  width: max(15vw,15rem);
   height: 100vh;
   top: 0;
   left: -30%;
@@ -19,3 +19,51 @@
 .nav-menu-items{
   list-style-type: none;
 }
+
+.navbar-toggle{
+  padding: 5% 5%;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: auto;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-toggle > *{
+  margin: 0 5%;
+}
+
+.navbar-toggle:hover{
+  background-color: #ccc;
+  font-weight: bolder;
+}
+
+.nav-menu-items > li {
+  margin: 0 5%;
+}
+
+
+/* .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 15rem;
+  height: 15rem;
+  background-color: steelblue;
+  color: ivory;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 200%;
+  right: -200%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+} */
