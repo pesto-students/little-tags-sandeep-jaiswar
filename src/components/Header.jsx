@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUserAlt, FaSearch, FaShoppingCart, FaHeart } from 'react-icons/fa';
+import { FaSearch } from 'react-icons/fa';
 import '../styles/components/Header.css';
 
 function Header(props) {
@@ -20,15 +20,12 @@ function Header(props) {
             <FaSearch />
           </button>
         </div>
-        <div className="">
-          <FaUserAlt />
+        <div className="signup-text">
+          SIGN UP
         </div>
-        <div className="">
-          <FaHeart />
-        </div>
-        <div className="">
-          <FaShoppingCart />
-        </div>
+        <button type="button" className="loginBtn">
+          LOG IN
+        </button>
       </div>
     </nav>
   )

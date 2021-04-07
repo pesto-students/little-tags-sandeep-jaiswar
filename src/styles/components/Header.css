@@ -37,7 +37,7 @@
 }
 
 .container > *{
-  margin: 0 4px;
+  margin: 0 1rem;
 }
 
 .cross1{
@@ -80,4 +80,29 @@ input[type=text] {
 
 .container > *{
   align-self: center;
+}
+
+.signup-text{
+  margin: 0 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  font-weight: bolder;
+  border: none;
+}
+
+.signup-text:hover{
+  background-color: #ccc;
+}
+
+.loginBtn{
+  margin: 0 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.loginBtn:hover{
+  background-color: #ccc;
 }
