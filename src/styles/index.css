@@ -1,6 +1,6 @@
 :root{
   --primary-color: ivory;
-  --secondary-color: ivory;
+  --secondary-color: #e9e9e9;
   --header-height: max(1%, 1.5rem);
 }
 

@@ -3,7 +3,7 @@
   width: 20vw;
   height: 100vh;
   top: 0;
-  left: -20%;
+  left: -30%;
   background-color: var(--secondary-color);
   overflow-x: hidden;
   transition: left .8s cubic-bezier(1, 0, 0, 1);

@@ -3,13 +3,14 @@
   display: flex;
   box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3);
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
   padding: 0;
   z-index: 2;
   align-items: center;
+  padding: max(1%,2vh) 0;
 }
 
 .header > * {
@@ -40,7 +41,7 @@
 }
 
 .cross1{
-  transform: rotate(-405deg) translate(-5px, 6px);
+  transform: rotate(-405deg) translate(-5px, 5px);
   width: 1.5rem;
 }
 
@@ -49,6 +50,34 @@
 }
 
 .cross3{
-  transform: rotate(405deg) translate(-5px, -6px);
+  transform: rotate(405deg) translate(-5px, -5px);
   width: 1.5rem;
+}
+
+input[type=text] {
+  padding: 6px;
+  font-size: 1rem;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 6px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.container > *{
+  align-self: center;
 }
