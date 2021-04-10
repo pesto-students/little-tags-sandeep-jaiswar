@@ -23,3 +23,10 @@ body{
   font-family: 'Gotham';
   src: local('Gotham'), url(../fonts/Gotham-Font/Gotham-Light.otf) format('truetype');
 }
+
+.wrapper{
+ overflow-y: auto;
+ margin-top: 3rem;
+ background-color: var(--secondary-color);
+ min-height: 100vh;
+}

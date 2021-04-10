@@ -1,5 +1,5 @@
 .header{
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: flex;
   flex-wrap: wrap;
   box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -66,6 +66,7 @@ input[type=text] {
   background: #ddd;
   font-size: 1rem;
   border: none;
+  outline: none;
   cursor: pointer;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -96,12 +97,14 @@ input[type=text] {
   border-radius: 1.2rem;
   cursor: pointer;
   font-weight: bolder;
-}
-
-.loginBtn:hover{
   background-color: #ccc;
+  outline: none;
 }
 
+.navlink{
+  text-decoration: none;
+  color: black;
+}
 
 @media(min-width: 480px) {
   .header{
