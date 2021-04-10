@@ -1,0 +1,38 @@
+.carousel{
+  position: relative;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.leftArrow{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  height: 2rem;
+  width:2rem;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid seagreen;
+}
+
+.rightArrow{
+  border: 2px solid seagreen;
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  height: 2rem;
+  width:2rem;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+}
+
+img{
+ width: 1000px;
+ height: 600px;
+ border-radius: 10px;
+}

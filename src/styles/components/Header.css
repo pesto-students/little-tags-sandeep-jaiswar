@@ -1,8 +1,8 @@
 .header{
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   display: flex;
+  flex-wrap: wrap;
   box-shadow:4px 4px 4px rgba(0, 0, 0, 0.3);
-  justify-content: space-between;
   position: fixed;
   top: 0;
   right: 0;
@@ -10,16 +10,16 @@
   padding: 0;
   z-index: 2;
   align-items: center;
-  padding: max(1%,2vh) 0;
+  padding: 1vh 0;
 }
 
 .header > * {
-  margin: 0 2rem;
   cursor: pointer;
 }
 
 .hamburger{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   cursor: pointer;
 }
@@ -29,15 +29,12 @@
   height: 5px;
   background-color: black;
   margin: 5% 0;
-  transition: all .8s cubic-bezier(1, 0, 0, 1);
+  transition: all .2s cubic-bezier(1, 0, 0, 1);
 }
 
 .container{
   display: flex;
-}
-
-.container > *{
-  margin: 0 1rem;
+  flex-wrap: wrap;
 }
 
 .cross1{
@@ -69,6 +66,7 @@ input[type=text] {
   background: #ddd;
   font-size: 1rem;
   border: none;
+  outline: none;
   cursor: pointer;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -83,7 +81,6 @@ input[type=text] {
 }
 
 .signup-text{
-  margin: 0 2rem;
   padding: 0.5rem 1.5rem;
   border-radius: 1.2rem;
   cursor: pointer;
@@ -96,13 +93,29 @@ input[type=text] {
 }
 
 .loginBtn{
-  margin: 0 2rem;
   padding: 0.5rem 1.5rem;
   border-radius: 1.2rem;
   cursor: pointer;
   font-weight: bolder;
+  background-color: #ccc;
+  outline: none;
 }
 
-.loginBtn:hover{
-  background-color: #ccc;
+.navlink{
+  text-decoration: none;
+  color: black;
+}
+
+@media(min-width: 480px) {
+  .header{
+    justify-content: space-between;
+  }
+
+  .hamburger{
+    margin-left: 0.2rem;
+  }
+
+  .container{
+    margin-right: 0.2rem;
+  }
 }

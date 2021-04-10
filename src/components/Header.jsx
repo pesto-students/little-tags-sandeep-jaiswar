@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaSearch } from 'react-icons/fa';
 import '../styles/components/Header.css';
 
 function Header(props) {
@@ -14,18 +13,16 @@ function Header(props) {
         <img src="https://icons.iconarchive.com/icons/social-media-icons/glossy-social/512/Spotify-icon.png" height="50px" width="50px" alt="logo" />
       </div> */}
       <div className="container">
-        <div className="search-container">
+        {/* <div className="search-container">
           <input type="text" name="search" placeholder="Search.." />
           <button type="submit">
             <FaSearch />
           </button>
-        </div>
-        <div className="signup-text">
+        </div> */}
+        <div className="signup-text" onClick={()=>props.state.setShowModal(true)}>
           SIGN UP
         </div>
-        <button type="button" className="loginBtn">
-          LOG IN
-        </button>
+        <button type="button" onClick={()=>props.state.setShowModal(true)} className="loginBtn">LOG IN</button>
       </div>
     </nav>
   )
