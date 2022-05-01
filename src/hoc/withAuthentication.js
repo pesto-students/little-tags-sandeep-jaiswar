@@ -18,10 +18,11 @@ const mapState = (state) => ({
 const withAuthenticaton = (Component) => {
   const NewComponent = (props) => {
     const dispatch = useDispatch()
-    const { userCheck, userAddressFlag } = useSelector(mapState)
+    const { userCheck, userAddressFlag } = useSelector(mapState);
     useEffect(() => {
       dispatch(userCheckedInSucess(true))
       dispatch(checkUserSession())
+      // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (
