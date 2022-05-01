@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header/HeaderComponent';
 import Footer from '../components/Footer/Footer';
 import Address from '../components/Address/Address';
+import './MainLayout.scss';
 import { useSelector } from 'react-redux';
 
 const mapState = (state) => ({
