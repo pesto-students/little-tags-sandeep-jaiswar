@@ -1,0 +1,225 @@
+.checkout {
+  display: flex;
+    flex-direction: row;
+    grid-column-gap: 2rem;
+    column-gap: 2rem;
+    // flex-wrap: wrap;
+    background-color: white;
+    padding: 5rem;
+}
+.address{
+  // flex-basis: 50%;
+  // width: 50%;
+  border: 1px solid #e0dede;
+  // border-color: #e0dede;
+  padding: 2rem;
+  flex-grow: 1;
+}
+.payment {
+  border: 1px solid #e0dede;
+  flex-grow: 1;
+  padding: 2rem;
+  height: max-content;
+}
+.billing-title {
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  font-family: 'Nunito';
+  font-size: 2.5rem;
+}
+.title {
+  position: relative;
+}
+.billing-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0dede;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.product-title-group {
+  display: flex;
+}
+.product-title-label {
+  font-family: 'Nunito';
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+}
+.product-label-1 {
+  flex-grow: 1;
+}
+.product-label {
+  font-family: 'Nunito';
+    font-size: 13px;
+    font-weight: 400;
+    // letter-spacing: 0.1rem;
+    font-style: normal;
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+.checkout-products {
+  margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    position: relative;
+}
+.checkout-product {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.product-wrap {
+  position: relative;
+}
+.checkout-product::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.3rem;;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0dede;
+}
+.checkout-product-img {
+    object-fit: contain;
+    width: 7rem;
+}
+.checkout-product-price {
+  font-family: 'Nunito';
+    font-size: 13px;
+    font-weight: 700;
+    font-style: normal;
+}
+.checkout-total-wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.4rem;
+  margin-bottom: 1rem;
+}
+.checkout-total-wrap::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.3rem;;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0dede;
+}
+.checkout-total {
+  display: flex;
+}
+.checkout-total > div:first-child {
+  flex-grow: 1;
+    /* text-align: right; */
+}
+.checkout-total-title {
+  font-family: 'Nunito';
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+}
+.checkout-product-value {
+  font-family: 'Nunito';
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+}
+.total-checkout-price {
+  font-size: 1.5rem;
+}
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-bottom: 1rem;
+}
+.payment-methods::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -0.3rem;;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0dede;
+}
+.method-label {
+  font-size: 13px;
+    margin-left: 0.6rem;
+}
+.payment-checkout-button {
+  width: 20rem;
+    padding: 1.4rem 0.5rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.product-checkout-btn {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.shipping-address {
+  display: flex;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    
+    
+}
+
+.shipping-address-data {
+  margin-top: 4rem;
+  display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.address-data {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-left: 3rem;
+    flex-grow: 1;
+    p {
+      margin-block-end: 0.5em;
+    }
+}
+.address-username {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-block-start: 0em;
+}
+
+.add-circle {
+  font-size: 1.5rem;
+}
+
+.add-new-address-text {
+  margin-left: 2rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.3rem;
+}
+
+
+@media(max-width:768px) {
+    .checkout {
+      flex-wrap: wrap;
+      row-gap: 2rem;
+    }
+}

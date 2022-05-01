@@ -1,0 +1,213 @@
+.HomeBanner {
+  background-image: url("../../assets/dashboard-banner-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    /* position: relative; */
+    margin-top: 2.75rem;
+    /* display: flex; */
+    box-sizing: border-box;
+    /* padding: 15rem; */
+    padding: 15rem 10rem;
+}
+
+.bannerText h2 {
+  font-size: 25px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  color: rgba(3, 2, 2, 0.877);
+  margin: 0;
+}
+
+.bannerText p {
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: black;
+  margin: 0;
+}
+
+.banner-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.discount-text {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  
+  p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-top: 0.5rem; */
+    width: 15rem;
+    height: 0.2rem;
+    background-color: black;
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    /* margin-top: 0.5rem; */
+    width: 15rem;
+    height: 0.2rem;
+    background-color: black;
+  }
+}
+.discount-horizontal {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.left-banner-text {
+  color: black;
+  font-family: 'Nunito';
+  text-transform: uppercase;
+  flex-basis: 75%;
+}
+
+.for-text {
+  font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.online-text {
+  font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.right-banner-text {
+  text-transform: uppercase;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .new-arrival {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+  }
+  .just-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+  }
+  .for-space {
+    letter-spacing: 0.1rem;
+  }
+  .you-text {
+    font-family: 'Allura', cursive;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+}
+.banner-shop-now {
+  margin-top: 2rem;
+  width: 20rem;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  font-family: 'Nunito';
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: black;
+  letter-spacing: 0.2rem;
+}
+
+// @media (min-width: 40rem) {
+//   .HomeBanner {
+//     height: 70vh;
+//   }
+
+//   .bannerText h2 {
+//     font-size: 45px;
+//   }
+
+//   .bannerText p {
+//     font-size: 30px;
+//   }
+// }
+
+@media(max-width:1024px) {
+  .discount-text {
+    font-size: 4rem;
+  }
+  .right-banner-text {
+    font-size: 4rem;
+  }
+}
+
+@media(max-width:768px) {
+  .right-banner-text {
+    .just-text {
+      font-size: 4rem;
+    }
+  }
+  
+}
+
+@media(max-width:425px) {
+  .HomeBanner {
+    // width: 104%;
+    padding: 7rem 5rem 5rem 2rem;
+    background-size: contain;
+    height: 42vh;
+  } 
+  .left-banner-text {
+    flex-basis: 75%;
+  }
+  .for-text {
+    font-size: 1rem;
+  }
+  .online-text {
+    font-size: 1.5rem;
+  }
+  .discount-text {
+    font-size: 2rem;
+    &::before {
+      width: 5rem;
+    }
+    &::after {
+      width: 5rem;
+    }
+  }
+  .right-banner-text {
+    .new-arrival {
+      font-size: 1rem;
+    }
+    .just-text {
+      font-size: 1.5rem;
+    }
+  }
+  .banner-shop-now  {
+    width: 10rem;
+    font-size: 1rem;
+  }
+}
+
+

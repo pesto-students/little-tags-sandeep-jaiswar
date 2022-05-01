@@ -3,10 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import FirebaseContext from './Config/Firebase/context';
+// import Firebase from './Config/Firebase/Firebase';
+import { Provider } from 'react-redux';
+import { store, persistor } from './redux/createStore';
+import { PersistGate } from 'redux-persist/integration/react'
+import { LanguageProvider } from './Config/Language';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LanguageProvider>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
+          <App />
+        </PersistGate>
+      </Provider>
+    </LanguageProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
