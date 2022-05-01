@@ -1,34 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
+import './index.css';
 import App from './App';
-import { configureStore } from './store/configureStore';
-import ScrollToTop from "./components/ScrollToTop";
+import reportWebVitals from './reportWebVitals';
+// import FirebaseContext from './Config/Firebase/context';
+// import Firebase from './Config/Firebase/Firebase';
+import { Provider } from 'react-redux';
+import { store, persistor } from './redux/createStore';
+import { PersistGate } from 'redux-persist/integration/react'
+import { LanguageProvider } from './Config/Language';
 
-const store = configureStore();
-const rootElem = document.getElementById('root');
-
-function render() {
-  ReactDOM.render(
-    <Provider store={store}>
-      <BrowserRouter>
-        <React.StrictMode>
-          <ScrollToTop/>
+ReactDOM.render(
+  <React.StrictMode>
+    <LanguageProvider>
+      <Provider store={store}>
+        <PersistGate persistor={persistor}>
           <App />
-        </React.StrictMode>
-      </BrowserRouter>
-    </Provider>,
-    rootElem
-  );
-}
+        </PersistGate>
+      </Provider>
+    </LanguageProvider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-if (module.hot) {
-  module.hot.accept('./App', function () {
-    setTimeout(render)
-  })
-};
-
-render();
-
-
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
